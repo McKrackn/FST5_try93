@@ -61,17 +61,17 @@ public class CharacterController2D : Agent
   public override void OnActionReceived(float[] vectorAction)
   {
     ////jump n
-    //if (Mathf.FloorToInt(vectorAction[0]) == 1)
-    //  Move(0.0f, false, true);
-    //// jump r
-    //if (Mathf.FloorToInt(vectorAction[0]) == 2)
-    //  Move(1.0f, false, true);
-    //// jump l
-    //if (Mathf.FloorToInt(vectorAction[0]) == 3)
-    //  Move(1.0f, false, true);
-    ////jump courch
-    //if (Mathf.FloorToInt(vectorAction[0]) == 4)
-    //  // Move(0.0f, true, true);
+    if (Mathf.FloorToInt(vectorAction[0]) == 1)
+      Move(0.0f, false, true);
+    // jump r
+    if (Mathf.FloorToInt(vectorAction[0]) == 2)
+      Move(1.0f, false, true);
+    // jump l
+    if (Mathf.FloorToInt(vectorAction[0]) == 3)
+      Move(1.0f, false, true);
+    //jump courch
+    if (Mathf.FloorToInt(vectorAction[0]) == 4)
+      // Move(0.0f, true, true);
 
 
 
